@@ -1,7 +1,7 @@
 from manim import *
 from manim_voiceover import VoiceoverScene
 # from manim_voiceover.services.gtts import GTTSService  # Google TTS 示例
-from cosy2 import CosyVoiceAPIVoiceoverService
+from cosy2_manim import CosyVoiceAPIVoiceoverService
 
 class VoiceoverExample(VoiceoverScene):
     def construct(self):
@@ -12,3 +12,4 @@ class VoiceoverExample(VoiceoverScene):
         with self.voiceover(text="大家好，这是一个 Manim Voiceover 的示例。") as tracker:
             square = Square()
             self.play(Create(square), run_time=tracker.duration)
+
