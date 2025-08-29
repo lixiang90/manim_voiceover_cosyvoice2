@@ -21,3 +21,4 @@ class VoiceoverExample(VoiceoverScene):
             self.play(Create(square), run_time=tracker.duration)
 ```
 6. 如有需要，可以在CosyVoice2SimpleAPI项目中添加新的说话人，方法是首先在asset文件夹下添加说话音频样例，再在 `cosy2.py` 修改 `DEFAULT_SPEAKERS` 字典。
+7. 使用命令 `python -m manim test1.py VoiceoverExample -p` （`test1.py` 换成你的文件名，`VoiceoverExample` 换成你的类名）生成并预览视频，此时视频含有使用CosyVoice2生成的音频。
