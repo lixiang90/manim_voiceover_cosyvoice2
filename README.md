@@ -8,7 +8,7 @@
 from manim import *
 from manim_voiceover import VoiceoverScene
 # from manim_voiceover.services.gtts import GTTSService  # Google TTS 示例
-from cosy2 import CosyVoiceAPIVoiceoverService
+from manim_cosy2 import CosyVoiceAPIVoiceoverService
 
 class VoiceoverExample(VoiceoverScene):
     def construct(self):
